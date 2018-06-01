@@ -12,6 +12,8 @@ Route::get('/login','ApiController@accessToken');
     Route::get('/awsCurrentObservations/{key?}','ApiController@awsCurrentObservations'); 
  
     Route::get('/specificyDate/{key?}','ApiController@specificyDate');
+
+    Route::get('/specificyDateRange/{key?}','ApiController@specificyDateRange');
  
     Route::get('/awsSpecificDateTimeStationObservations/{key?}','ApiController@awsSpecificDateTimeStationObservations'); 
     

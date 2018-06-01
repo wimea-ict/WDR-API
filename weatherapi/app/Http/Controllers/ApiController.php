@@ -54,7 +54,22 @@ class ApiController extends Controller
         }
       
     }
-   
+    public function specificyDateRange(Request $request)
+    {
+        if(!$request)
+        return '{"message": "specify key"}'; 
+
+        $validuser=User::verifyAPIUser($request->key);
+   //return($validuser);
+        if($validuser){
+            $obv=Observationslip::observationsForspecificDateRange($request->datefrom,$request->dateto);
+            return $this->prepareResult(true, $obv, [],"observation data for ".$request->date);
+        }else{
+            return '{"message": "Unauthenticated"}';
+            
+        }
+      
+    }
     public function awsCurrentObservations(Request $request)
     {
         if(!$request)
