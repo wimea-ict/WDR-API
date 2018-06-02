@@ -19,11 +19,6 @@ class ApiController extends Controller
     return  User::userToken(Auth::user()->email);
  }  	
 
-
- 
- 
- 
-  
   
     
     private function prepareResult($status, $data, $errors,$msg)
