@@ -19,7 +19,6 @@
                       <li><a href="{{ URL::to('document') }}" >Documents</a></li>
                       <li><a href="https://weatherdataapi.blogspot.ug/p/weather-data-api.html">Blog</a></li>
                       <li><a href="{{ URL::to('about') }}">About</a></li>
-                      <li><a href="{{ URL::to('demo') }}">Demo</a></li>
           
                     </ul>
                     <ul class="navbar-nav ml-auto">
