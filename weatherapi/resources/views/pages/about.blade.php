@@ -36,7 +36,7 @@
 </div>
 
 <div class="col-md-6">
-        <img src="{{ asset('css/images/rainfall.png') }}" alt="example" height="250" width="430">
+        <img src="{{ asset('css/images/rainfall.PNG') }}" alt="example" height="250" width="430">
 </div>
 </div>
 
