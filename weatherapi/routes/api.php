@@ -18,7 +18,12 @@ Route::get('/login','ApiController@accessToken');
     Route::get('/awsSpecificDateTimeStationObservations/{key?}','ApiController@awsSpecificDateTimeStationObservations'); 
     
     Route::get('/manualSpecificDateTimeStationObservations/{key?}','ApiController@manualSpecificDateTimeStationObservations'); 
-  
+    
+    Route::get('/availableStations/{key?}','ApiController@availableStations');
+
+    Route::get('/dataforrecent30days/{key?}','ApiController@dataforrecent30days');
+
+    Route::get('/dataforrecent7days/{key?}','ApiController@dataforrecent7days');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
