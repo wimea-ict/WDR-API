@@ -16,7 +16,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav">
                       <li><a href="{{ URL::to('home') }}" >Home</a></li>
-                      <li><a href="{{ URL::to('document') }}" >Documents</a></li>
+                      <li><a href="{{ URL::to('document') }}" >Documentation</a></li>
                       <li><a href="https://weatherdataapi.blogspot.ug/p/weather-data-api.html">Blog</a></li>
                       <li><a href="{{ URL::to('about') }}">About</a></li>
           
