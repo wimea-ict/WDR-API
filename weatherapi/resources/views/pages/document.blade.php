@@ -7,16 +7,14 @@
        </p> 
        <div class="row">         
              <div class="col-md-6"  style="background-color: #fff;"> 
-                <p><h2>Documentation</h2>  
+                <br><h2>Documentation</h2> 
+                <p style="font-size:12px"> 
                     
             The Weather data API is an API that provides easy programmatic access to the local weather data 
             obtained from the local weather stations in Uganda.
             </p> 
-        <p><h6>
-            Via the API, this research can be utilised,
-             repurposed and contextualised by your organisation to serve you, 
-             and your users’, needs and inform evidence based policy making and practice</h6>
-        </p>
+       
+        
         
                 <p><h2>Follow these steps to use this API</h2>  
                     <div class="panel-group" id="accordion">
@@ -27,7 +25,7 @@
                             </h4>
                           </div>
                           <div id="collapse1" class="panel-collapse collapse in">
-                            <div class="panel-body">Go to the home page and click the button "Register for API key", this 
+                            <div class="panel-body"style="font-size:12px" >Go to the home page and click the button "Register for API key", this 
                                 will display a form. Fill in the form and then click register. if all creditials are fine, 
                                 you will be redirected to user accounts page. 
                                 </div>
@@ -40,51 +38,54 @@
                             </h4>
                           </div>
                           <div id="collapse2" class="panel-collapse collapse">
-                            <div class="panel-body">This page consists of the Username and the API key, to 
+                            <div class="panel-body" style="font-size:12px">This page consists of the Username and the API key, to 
                                 use the API key, click the "copy" button to copy the API and paste it the your application
                                 that you are building.</div>
                           </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Step three</a>
-                            </h4>
-                          </div>
-                          <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                          </div>
-                        </div>
+                        </div>  
                       </div> 
                 </p> 
                   
-                <p><h2>Testing the weatherdata API</h2>  
+                <h2>Testing the weatherdata API</h2>
+                <p style="font-size:12px"> 
                   To test the API, copy the url together with the API Key and paste them in an API 
-                  testing application such as <a href="www.getpostman.com">POSTMAN</a>. 
+                  testing application such as POSTMAN
                </p>
             </div> 
             
                  <div class="col-md-6" style="background-color: #fff;"> 
                               <p style="font-size:10px">
-                                <h2>Weather Data API method to retrieve data from station</h2>
-                                  
-                                The [GET] method is used to receive weather data from weather station:                              
-                                      
-                              </p>
-                              <h3>[GET]/manualCurrentObservations</h3>
-                              <p style="font-size:12px">                             
-                              This method is used for retriving weather data from the Manual weather station which are 
-                              the current weather station.                             
+                                <h2>Weather Data API "urls" for retrieving weather data from station</h2>
                               </p>
 
-                                <h3>[GET]/awsCurrentObservations.</h3>                             
-                                
+                              <p style="font-size:12px">
+                              <a href="http://wimea.mak.ac.ug/weatherapi/api/manualCurrentObservations/?key=">
+                              http://wimea.mak.ac.ug/weatherapi/api/manualCurrentObservations/?key=....</a></p>
+                              <p style="font-size:12px">                             
+                              This url together with the API key provides the current weather data from the manual weather station.                             
+                              </p>
+
+                              <p style="font-size:12px">
+                              <a href="http://wimea.mak.ac.ug/weatherapi/api/awsCurrentObservations/?key=">
+                                http://wimea.mak.ac.ug/weatherapi/api/awsCurrentObservations/?key=....</a></p>
+                                <p style="font-size:12px">                             
+                                  This url together with the API key provides the current weather data from the Automatic weather station.                             
+                                </p>
+
+                              <p style="font-size:12px">
+                              <a href="http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=&date=">
+                                http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=....&date=....</a></p>
+                                  <p style="font-size:12px">                             
+                                    This url together with the API key provides weather data based on the specified data by the user.                             
+                                  </p>
+
                                   <p style="font-size:12px">
-                                     This method is used for retriving weather data from the Automatic Weather stations (AWS) which are 
-                                     the current weather station.                                     
-                                 </p>
+                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=&date=">
+                                    http://wimea.mak.ac.ug/weatherapi/api/specificyDateRange/?key=..&datefrom=...&dateto=......</a></p>
+                                      <p style="font-size:12px">                             
+                                        This url together with the API key provides weather data for a specified data range.                              
+                                      </p>              
+                      
                                  
 
                                  <a href="#demo" class="btn btn-info" data-toggle="collapse">Parameters</a>
