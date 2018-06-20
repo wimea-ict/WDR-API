@@ -6,7 +6,7 @@
       
        </p> 
        <div class="row">         
-             <div class="col-md-6"  style="background-color: #fff;"> 
+             <div class="col-md-5"  style="background-color: #fff;"> 
                 <br><h2>Documentation</h2> 
                 <p style="font-size:12px"> 
                     
@@ -51,44 +51,11 @@
                   To test the API, copy the url together with the API Key and paste them in an API 
                   testing application such as POSTMAN
                </p>
-            </div> 
-            
-                 <div class="col-md-6" style="background-color: #fff;"> 
-                              <p style="font-size:10px">
-                                <h2>Weather Data API "urls" for retrieving weather data from station</h2>
-                              </p>
 
-                              <p style="font-size:12px">
-                              <a href="http://wimea.mak.ac.ug/weatherapi/api/manualCurrentObservations/?key=">
-                              http://wimea.mak.ac.ug/weatherapi/api/manualCurrentObservations/?key=....</a></p>
-                              <p style="font-size:12px">                             
-                              This url together with the API key provides the current weather data from the manual weather station.                             
-                              </p>
+               
+                      <br><h3>Sample weather data</h3>
 
-                              <p style="font-size:12px">
-                              <a href="http://wimea.mak.ac.ug/weatherapi/api/awsCurrentObservations/?key=">
-                                http://wimea.mak.ac.ug/weatherapi/api/awsCurrentObservations/?key=....</a></p>
-                                <p style="font-size:12px">                             
-                                  This url together with the API key provides the current weather data from the Automatic weather station.                             
-                                </p>
-
-                              <p style="font-size:12px">
-                              <a href="http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=&date=">
-                                http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=....&date=....</a></p>
-                                  <p style="font-size:12px">                             
-                                    This url together with the API key provides weather data based on the specified data by the user.                             
-                                  </p>
-
-                                  <p style="font-size:12px">
-                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=&date=">
-                                    http://wimea.mak.ac.ug/weatherapi/api/specificyDateRange/?key=..&datefrom=...&dateto=......</a></p>
-                                      <p style="font-size:12px">                             
-                                        This url together with the API key provides weather data for a specified data range.                              
-                                      </p>              
-                      
-                                 
-
-                                 <a href="#demo" class="btn btn-info" data-toggle="collapse">Parameters</a>
+                      <a href="#demo" class="btn btn-info" data-toggle="collapse">Parameters</a></br>
                                  <div id="demo" class="collapse">
                                     <table class="table table-condensed">
                                         <thead>
@@ -132,11 +99,7 @@
                                         </tbody>
                                       </table>
                                  </div>
-                              
-
-                                
-                              
-                              <textarea font-size="23px" rows="20" cols="70" style="color:blue; font-size:10px" disabled  >
+               <textarea font-size="23px" rows="20" cols="70" style="color:blue; font-size:10px" disabled  >
                                 {
                                   "Kampala": {
                                     "Date": "2017-05-01",
@@ -254,6 +217,107 @@
                                   }
                                 
                               </textarea>
+
+                              
+            </div> 
+            
+                 <div class="col-md-7" style="background-color: #fff;"> 
+                 <p style="font-size:10px">
+                                <h2>Weather Data API "urls" for retrieving weather data from station</h2>
+                              </p>
+                 <ol style="font-size:10px">
+                                  <li>
+                                  <p style="font-size:12px">
+                              <a href="http://wimea.mak.ac.ug/weatherapi/api/manualCurrentObservations/?key=">
+                              http://wimea.mak.ac.ug/weatherapi/api/manualCurrentObservations/?key=....</a></p>
+                              <p style="font-size:12px">                             
+                              This url together with the API key provides the current weather data from the manual weather station.                             
+                              </p>
+                                  </li>
+                                  <li>
+                                  <p style="font-size:12px">
+                              <a href="http://wimea.mak.ac.ug/weatherapi/api/awsCurrentObservations/?key=">
+                                http://wimea.mak.ac.ug/weatherapi/api/awsCurrentObservations/?key=....</a></p>
+                                <p style="font-size:12px">                             
+                                  This url together with the API key provides the current weather data from the Automatic weather station.                             
+                                </p>
+                                  </li>
+                                  <li>
+                                  <p style="font-size:12px">
+                              <a href="http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=&date=">
+                                http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=....&date=....</a></p>
+                                  <p style="font-size:12px">                             
+                                    This url together with the API key provides weather data based on the specified data by the user.                             
+                                  </p>
+                                  </li>
+                                  <li>
+                                  <p style="font-size:12px">
+                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/specificyDate/?key=&date=">
+                                    http://wimea.mak.ac.ug/weatherapi/api/specificyDateRange/?key=..&datefrom=...&dateto=......</a></p>
+                                      <p style="font-size:12px">                             
+                                        This url together with the API key provides weather data for a specified data range.                              
+                                      </p> 
+                                  </li>
+                                  <li>    <p style="font-size:12px">
+                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/awsSpecificDateTimeStationObservations/?key=&date=&time">
+                                    http://wimea.mak.ac.ug/weatherapi/api/awsSpecificDateTimeStationObservations/?key=..&date=...&time=..</a></p>
+                                      <p style="font-size:12px">                             
+                                        This url together with the API key provides weather data from automatic stations for a specified data and time.                              
+                                      </p> </li>
+
+                                  <li>     <p style="font-size:12px">
+                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/manualSpecificDateTimeStationObservations/?key=&date=&time">
+                                    http://wimea.mak.ac.ug/weatherapi/api/manualSpecificDateTimeStationObservations/?key=..&date=...&time=..</a></p>
+                                      <p style="font-size:12px">                             
+                                        This url together with the API key provides weather data from manual stations for a specified data and time.                              
+                                      </p></li>
+                                  <li>       <p style="font-size:12px">
+                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/dataforrecent30days/?key=">
+                                    http://wimea.mak.ac.ug/weatherapi/api/dataforrecent30days/?key=...</a></p>
+                                      <p style="font-size:12px">                             
+                                        This url together with the API key provides weather data for the most recent last 30 days.                              
+                                      </p> </li>
+                                  <li> <p style="font-size:12px">
+                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/dataforrecent7days/?key=">
+                                    http://wimea.mak.ac.ug/weatherapi/api/dataforrecent7days/?key=...</a></p>
+                                      <p style="font-size:12px">                             
+                                        This url together with the API key provides weather data for the most recent last 7 days.                              
+                                      </p></li>
+                                  <li>
+                                  <p style="font-size:12px">
+                                  <a href="http://wimea.mak.ac.ug/weatherapi/api/availableStations/?key=">
+                                    http://wimea.mak.ac.ug/weatherapi/api/availableStations/?key=...</a></p>
+                                      <p style="font-size:12px">                             
+                                        This url together with the API key provides stations data for the available active stations in the Weather Data Repository system.                              
+                                      </p>
+                                  </li>
+                                  
+                 </ol>
+                              
+
+                              
+
+                              
+
+                              
+
+                                               
+                      
+                                   
+
+                                    
+
+                                   
+
+                                  
+
+                                  
+                                 
+                              
+
+                                
+                              
+                             
                            
                             
                           </p>                     
