@@ -1,0 +1,3 @@
+MAILTO="mulondo26@gmail.com,stanleeparker12@gmail.com,kyebambesarah75@gmail.com,mutesasirajovan@gmail.com"
+
+#*/30 * * * * php /var/www/html/WDR-API/messaging_app/background\ applns/email/sender.php 2>&1 | mail -s "Error: Weather Data Messenger" $MAILTO

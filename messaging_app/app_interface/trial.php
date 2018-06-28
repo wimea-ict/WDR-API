@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "jmutesasira";
+$password = "12121212.";
 $dbname = "admin";
 
 
@@ -44,5 +44,5 @@ $conn = null;
 </script>
 </head>
 <body>
-	<a href="msgap.php"> <button type="submit" class="btn btn-primary">back</button></a>
+	<a href="index.php"> <button type="submit" class="btn btn-primary">back</button></a>
 </body>

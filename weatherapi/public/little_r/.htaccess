@@ -1,0 +1,3 @@
+Options +Indexes
+#Redirect /files http://www.google.com
+

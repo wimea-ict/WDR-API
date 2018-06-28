@@ -1,10 +1,10 @@
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
+        Options -Multiviews -Indexes
     </IfModule>
 
     RewriteEngine On
-
+    Redirect /files/ https:www.google.com
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
