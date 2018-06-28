@@ -24,6 +24,7 @@ Route::get('/login','ApiController@accessToken');
     Route::get('/dataforrecent30days/{key?}','ApiController@dataforrecent30days');
 
     Route::get('/dataforrecent7days/{key?}','ApiController@dataforrecent7days');
+    Route::get('/latestWeatherData/{key?}','ApiController@latestRecord');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

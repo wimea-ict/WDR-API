@@ -29,7 +29,26 @@ class ApiController extends Controller
   
     }
   
-  
+    
+    public function latestRecord(Request $request)
+    {
+        if(!$request)
+        return '{"message": "specify key"}'; 
+
+        $validuser=User::verifyAPIUser($request->key);
+   //return($validuser);
+        if($validuser){
+           
+            $obv=Observationslip::latestObservation();
+           
+            return $this->prepareResult(true, $obv, [],"latest weather observation  recorded ");
+        }else{
+            return '{"message": "Unauthenticated"}';
+            
+        }
+      
+    }
+
     public function specificyDate(Request $request)
     {
         if(!$request)
