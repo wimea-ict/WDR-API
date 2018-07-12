@@ -1,2 +1,3 @@
 weatherapi/.env
 weatherapi/config/
+weatherapi/public/little_r/*.obs
